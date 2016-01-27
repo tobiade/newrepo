@@ -12,6 +12,7 @@
 		E54036971C590DEA0083EE41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54036951C590DEA0083EE41 /* Main.storyboard */; };
 		E54036991C590DEA0083EE41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E54036981C590DEA0083EE41 /* Assets.xcassets */; };
 		E540369C1C590DEA0083EE41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E540369A1C590DEA0083EE41 /* LaunchScreen.storyboard */; };
+		E54036A81C5910940083EE41 /* MotionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54036A71C5910940083EE41 /* MotionKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E54036981C590DEA0083EE41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E540369B1C590DEA0083EE41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E540369D1C590DEA0083EE41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E54036A71C5910940083EE41 /* MotionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionKit.swift; path = ../../../Downloads/MotionKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		E54036901C590DE90083EE41 /* SensorApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				E54036A71C5910940083EE41 /* MotionKit.swift */,
 				E54036911C590DE90083EE41 /* AppDelegate.swift */,
 				E54036931C590DE90083EE41 /* ViewController.swift */,
 				E54036951C590DEA0083EE41 /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				E54036941C590DE90083EE41 /* ViewController.swift in Sources */,
 				E54036921C590DE90083EE41 /* AppDelegate.swift in Sources */,
+				E54036A81C5910940083EE41 /* MotionKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

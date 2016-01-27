@@ -9,17 +9,42 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: Properties
+    
+    @IBOutlet weak var xAccelerometerValue: UILabel!
+    @IBOutlet weak var yAccelerometerValue: UILabel!
+    @IBOutlet weak var zAccelerometerValue: UILabel!
+    
+    let motionkit = MotionKit()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: Actions
+    
+    @IBAction func accBttn(sender: UIButton) {
+        
+        motionkit.getAccelerationAtCurrentInstant { (x, y, z) -> () in
+            self.xAccelerometerValue.text=String(x)
+            self.yAccelerometerValue.text=String(y)
+            self.zAccelerometerValue.text=String(z)
+        }
+        //        self.xAccelerometerValue.text="YAhhhhh"
+        //        self.yAccelerometerValue.text="Heyyyyyy"
+        //        self.zAccelerometerValue.text="Looooool"
     }
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
